@@ -1,0 +1,3 @@
+# Redirect (proxy) anything starting with /api/v1 to https://parts.quarkcs.com
+# The :splat means "match all further sub-paths"
+/api/v1/*  https://parts.quarkcs.com/api/v1/:splat  200
