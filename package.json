@@ -1,24 +1,31 @@
 {
   "name": "vehicle-parts-app",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
+    // Build your Vite app, outputting to the "_static" folder
     "build": "vite build --outDir _static",
-    "preview": "vite preview",
+
+    // For local dev, if needed:
+    "dev": "vite",
+
+    // Start script runs "sammy.js" first, then 'serve' the "_static" folder
     "start": "serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n"
   },
   "dependencies": {
-    "axios": "^1.7.9",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    // Vue and other runtime deps
+    "vue": "^3.x",
+    "axios": "^1.x",
+    // 'serve' used at runtime to serve static content
+    "serve": "^14.2.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.1",
-    "tailwindcss": "^3.4.17",
-    "vite": "^6.0.5"
+    // Vite + any plugin for Vue
+    "vite": "^x.x.x",
+    "@vitejs/plugin-vue": "^x.x.x",
+    // If you're using Tailwind/PostCSS
+    "tailwindcss": "^3.x",
+    "postcss": "^8.x",
+    "autoprefixer": "^10.x"
   }
 }
