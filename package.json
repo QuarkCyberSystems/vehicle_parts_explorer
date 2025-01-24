@@ -3,27 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    // Build your Vite app, outputting to the "_static" folder
+   
     "build": "vite build --outDir _static",
 
-    // For local dev, if needed:
+  
     "dev": "vite",
 
-    // Start script runs "sammy.js" first, then 'serve' the "_static" folder
+
     "start": "serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n"
   },
   "dependencies": {
-    // Vue and other runtime deps
+
     "vue": "^3.x",
     "axios": "^1.x",
-    // 'serve' used at runtime to serve static content
+
     "serve": "^14.2.1"
   },
   "devDependencies": {
-    // Vite + any plugin for Vue
+
     "vite": "^x.x.x",
     "@vitejs/plugin-vue": "^x.x.x",
-    // If you're using Tailwind/PostCSS
+ 
     "tailwindcss": "^3.x",
     "postcss": "^8.x",
     "autoprefixer": "^10.x"
