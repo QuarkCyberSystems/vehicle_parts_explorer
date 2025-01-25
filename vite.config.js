@@ -11,9 +11,7 @@ export default defineConfig({
   define: {
     // The key is the placeholder to replace, and the value is what you want inserted at build time.
     // This example simply defines MY_FLAG = true.
-    __DEFINES__: JSON.stringify({ MY_FLAG: true }),
-    __HMR_CONFIG_NAME__: JSON.stringify({ someHmrSetting: true }),
-    __BASE__: ("/")
+
   },
   server: {
     proxy: {
